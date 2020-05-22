@@ -15,10 +15,10 @@ Convert a simple view to a Kanban.
 The component needs that the attribute statuscode is present on the view.
 
 #### Ready to use
-The [managed](https://github.com/VinnyDyn/StatusReasonKanban/releases/download/1.0.0/VinnyBControls_1_0_0_0_managed.zip) solution is ideal for non developers. Import and use.
+The [managed]TBD solution is ideal for non developers. Import and use.
 
 #### Developers
-The PCF call a Action (process) to obtain informations about the statuscode of entity, import the [unmanaged](https://github.com/VinnyDyn/StatusReasonKanban/releases/download/1.0.0/VinnyBControls_1_0_0_0.zip) solution with the action 'vnb_RetrieveOptionSetMetadata' to tests.
+The PCF call a Action (process) to obtain informations about the statuscode of entity, import the [unmanaged]TBD solution with the action 'vnb_RetrieveOptionSetMetadata' to tests.
 
 ### Features
 - All options are based on statusocde.
@@ -40,3 +40,39 @@ Change the attribute body from 'string' to 'ReadableStream':
          */
         body: ReadableStream;
 ```
+/**
+     * Interface for the WebAPI Execute request response
+     */
+    interface ExecuteResponse {
+        /**
+         * (Optional). Object.Response body.
+         */
+        body: ReadableStream;
+        /**
+         * Response headers.
+         */
+        headers: any;
+        /**
+         * Indicates whether the request was successful.
+         */
+        ok: boolean;
+        /**
+         * Numeric value in the response status code.
+         * @example 200
+         */
+        status: number;
+        /**
+         * Description of the response status code.
+         * @example "OK"
+         */
+        statusText: string;
+        /**
+         * Response type.Values are: the empty string (default), "arraybuffer", "blob", "document", "json", and "text".
+         */
+        type: string;
+        /**
+         * Request URL of the action, function, or CRUD request that was sent to the Web API endpoint.
+         */
+        url: string;
+    }
+
