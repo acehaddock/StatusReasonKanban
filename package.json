@@ -15,7 +15,7 @@
     "dragula": "^3.7.2"
   },
   "devDependencies": {
-    "pcf-scripts": "^0",
-    "pcf-start": "^0"
+    "pcf-scripts": "^1",
+    "pcf-start": "^1"
   }
 }

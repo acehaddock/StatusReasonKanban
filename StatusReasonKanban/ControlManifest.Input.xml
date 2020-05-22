@@ -9,7 +9,7 @@
   control-type="standard"
   preview-image="img/iconfinder_7_2177457.png">
 
-    <data-set name="DataSet" display-name-key="Entity DataSet">
+    <data-set name="DataSet" display-name-key="Entity DataSet" cds-data-set-options="displayCommandBar:true;displayViewSelector:false;displayQuickFind:false">
     </data-set>
 
     <resources>
