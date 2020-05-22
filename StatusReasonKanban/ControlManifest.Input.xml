@@ -6,8 +6,8 @@
   version="1.0.0" 
   display-name-key="StatusReason Kanban" 
   description-key="" 
-  control-type="standard"
-  preview-image="img/iconfinder_7_2177457.png">
+  control-type="standard">
+  <!--preview-image="img/iconfinder_7_2177457.png"-->
 
     <data-set name="DataSet" display-name-key="Entity DataSet" cds-data-set-options="displayCommandBar:true;displayViewSelector:false;displayQuickFind:false">
     </data-set>
@@ -15,7 +15,7 @@
     <resources>
       <code path="index.ts" order="1"/>
       <css path="css/StatusReasonKanban.css" order="1" />
-      <img path="img/iconfinder_7_2177457.png" />
+      <!--<img path="img/iconfinder_7_2177457.png" />-->
     </resources>
 
   </control>
